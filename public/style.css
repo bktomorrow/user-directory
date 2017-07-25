@@ -1,0 +1,16 @@
+body{
+  display: inline-block;
+}
+.person{
+  display: inline-block;
+  border: 1px solid black;
+  margin: 15px;
+  padding: 5px;
+}
+.name{
+  color: blue;
+  font-weight: bold;
+}
+.noJob{
+  color: red;
+}

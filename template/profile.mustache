@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Profile</title>
+    <link rel="stylesheet" href="/style2.css">
+  </head>
+  <body>
+    <div class="upper">
+      <img src="{{avatar}}"/>
+      <h1>{{name}}</h1>
+      <p> {{address.city}}, {{address.country}} |
+          {{#job}}
+            {{job}}, {{company}}
+          {{/job}}
+          {{^job}}
+            <p class="noJob">Available for hire</p>
+          {{/job}}
+        </p>
+      <p> {{email}}, {{phone}}</p>
+    </div>
+    <div class="lower">
+      <table>
+      <tr><th>Education: </th><td>{{university}}</td></tr>
+      <tr><th>Skills: </th><td> {{skills}}</td></tr>
+      </table>
+    </div>
+  </body>
+</html>
